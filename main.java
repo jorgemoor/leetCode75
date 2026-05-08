@@ -1,5 +1,11 @@
+import array_string.*;
 public class main {
     public static void main(String[] args) {
-        System.out.println("Hola");
+        int[] candies = {2,3,5,1,3};
+        int extraCandies = 3;
+
+        System.out.println(kidsWithCandies.kwc(candies, extraCandies));
+
+
     }
 }
