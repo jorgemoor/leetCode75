@@ -1,10 +1,10 @@
 import array_string.*;
 public class main {
     public static void main(String[] args) {
-        int[] candies = {2,3,5,1,3};
-        int extraCandies = 3;
+        int[] candies = {1,0,0,0,1};
+        int extraCandies = 2;
 
-        System.out.println(kidsWithCandies.kwc(candies, extraCandies));
+        System.out.println(canPlaceFlowers.cpf(candies, extraCandies));
 
 
     }
