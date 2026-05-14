@@ -8,6 +8,7 @@ public class productExceptSelf {
         resultado[0] = 1;
         for (int i = 1; i < n; i++) {
             resultado[i] = resultado[i - 1] * nums[i - 1];
+            System.out.println(resultado[i]);
 
         }
         int right = 1;
