@@ -4,12 +4,12 @@ import java.util.Arrays;
 
 public class main {
     public static void main(String[] args) {
-        int[] candies = {2,1,5,0,4,6};
+        char[] candies = {'a', 'a', 'b', 'b', 'c', 'c', 'c'};
         int[] x = {1, 1, 2, 6};
         int extraCandies = 1;
         String s = "the sky is blue";
 
-        System.out.println(increasingTripletSubsequence.its(candies));
+        System.out.println(stringCompression.sC(candies));
 
 
     }
