@@ -1,13 +1,13 @@
-import arraystring.*;
+import twopointers.*;
 
 public class main {
     public static void main(String[] args) {
         char[] candies = {'a', 'a', 'b', 'b', 'c', 'c', 'c'};
-        int[] x = {1, 1, 2, 6};
+        int[] x = {0,1,0,3,12};
         int extraCandies = 1;
         String s = "the sky is blue";
 
-        System.out.println(stringCompression.sC(candies));
+        MoveZeroes.mz(x);
 
 
     }
