@@ -1,4 +1,4 @@
-package array_string;
+package arraystring;
 
 public class canPlaceFlowers {
     public static boolean cpf(int[] flowerbed, int n) {

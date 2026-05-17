@@ -1,4 +1,4 @@
-package array_string;
+package arraystring;
 
 public class productExceptSelf {
     public static int[] pes(int[] nums) {

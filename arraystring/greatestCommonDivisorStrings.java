@@ -1,4 +1,4 @@
-package array_string;
+package arraystring;
 
 public class greatestCommonDivisorStrings {
     public String gcdOfStrings(String str1, String str2){

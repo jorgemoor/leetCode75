@@ -1,4 +1,4 @@
-package array_string;
+package arraystring;
 
 public class reverseVowelsString {
     public static String rvs(String s){

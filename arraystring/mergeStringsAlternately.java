@@ -1,4 +1,4 @@
-package array_string;
+package arraystring;
 
 public class mergeStringsAlternately {
     public String mergeAlternately(String word1, String word2){

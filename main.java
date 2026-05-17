@@ -1,6 +1,4 @@
-import array_string.*;
-
-import java.util.Arrays;
+import arraystring.*;
 
 public class main {
     public static void main(String[] args) {

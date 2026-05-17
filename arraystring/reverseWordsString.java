@@ -1,4 +1,4 @@
-package array_string;
+package arraystring;
 
 public class reverseWordsString {
     public static String rws(String s) {

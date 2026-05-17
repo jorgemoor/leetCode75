@@ -1,4 +1,4 @@
-package array_string;
+package arraystring;
 
 public class increasingTripletSubsequence {
     public static boolean its(int[] nums){

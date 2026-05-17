@@ -1,4 +1,4 @@
-package array_string;
+package arraystring;
 
 public class stringCompression {
     public static int sC(char[] chars){
