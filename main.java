@@ -5,9 +5,10 @@ public class main {
         char[] candies = {'a', 'a', 'b', 'b', 'c', 'c', 'c'};
         int[] x = {0,1,0,3,12};
         int extraCandies = 1;
-        String s = "the sky is blue";
+        String s = "abc";
+        String t = "ahbgdc";
 
-        MoveZeroes.mz(x);
+        System.out.println(IsSubsequence.is(s, t));
 
 
     }
