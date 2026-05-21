@@ -10,6 +10,7 @@ public class main {
 
         System.out.println(MaximumAverageSubarray.findMaxAverage(x, 4));
 
+        System.out.println((int)'b');
 
     }
 }
