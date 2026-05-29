@@ -7,6 +7,8 @@ public class LongestSubarrayDeletingOneElement {
         int len = 0;
         int end = 0;
 
+        System.out.println(nums.length);
+
         while(end < nums.length){
             if(nums[end] == 0){
                 if(ind != -1){
