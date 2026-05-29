@@ -10,7 +10,7 @@ public class LongestSubarrayDeletingOneElement {
         while(end < nums.length){
             if(nums[end] == 0){
                 if(ind != -1){
-                    len = Math.max(len, end-start - 1);
+                    len = Math.max(len, end - start - 1);
                     start = ind+1;
                 }
                 ind = end;
