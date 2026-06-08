@@ -1,23 +1,37 @@
 package hashmap;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class FindDifferenceTwoArrays {
-    public List<List<Integer>> findDifferences(int[] nums1, int[] nums2) {
-        List<List<Integer>> list = new ArrayList<>();
-        Arrays.sort(nums1);
-        Arrays.sort(nums2);
-        int i = 0, j = 0;
-        while (i < nums1.length && j < nums2.length) {
-            if (nums1[i] == nums2[j]) {
-                list.add(Arrays.asList(nums1[i], nums2[j]));
-                i++;
-                j++;
+    public static List<List<Integer>> findDifferences(int[] nums1, int[] nums2) {
+        Set<Integer> set1 = new HashSet<>();
+        Set<Integer> set2 = new HashSet<>();
 
+        for(int num : nums1){
+            set1.add(num);
+        }
+        for(int num : nums2){
+            set2.add(num);
+        }
+
+        List<Integer> diff1 = new ArrayList<>();
+        List<Integer> diff2 = new ArrayList<>();
+
+        for(int num : set1){
+            if(!set2.contains(num)){
+                diff1.add(num);
             }
         }
-        return list;
+        for(int num : set2){
+            if(!set1.contains(num)){
+                diff2.add(num);
+            }
+        }
+
+        List<List<Integer>> result = new ArrayList<>();
+        result.add(diff1);
+        result.add(diff2);
+        return result;
+
     }
 }
