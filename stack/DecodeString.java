@@ -1,33 +1,39 @@
 package stack;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 public class DecodeString {
-    static int  i = 0;
+
     public static String decodeString(String s) {
-        i = 0;
-        return decode(s);
-    }
-    private static String decode(String s) {
-        StringBuilder res = new StringBuilder();
-        int num = 0;
-        while (i < s.length()) {
-            char c = s.charAt(i);
-            if (Character.isDigit(c)) {
-                num = num * 10 + (c - '0');
-                i++;
-            } else if (c == '[') {
-                i++;
-                String inner = decode(s);
-                for (int k = 0; k < num; k++) res.append(inner);
-                num = 0;
-            } else if (c == ']') {
-                i++;
-                return res.toString();
-            } else {
-                res.append(c);
-                i++;
+        Deque<Integer> counts = new ArrayDeque<>();
+        Deque<StringBuilder> strings = new ArrayDeque<>();
+
+        StringBuilder current = new StringBuilder();
+        int number = 0;
+
+        for(char c : s.toCharArray()){
+            if(Character.isDigit(c)){
+                number = number * 10 + (c - '0');
+            }else if(c == '['){
+                counts.push(number);
+                strings.push(current);
+                current = new StringBuilder();
+                number = 0;
+            }else if(c == ']'){
+                int repeat = counts.pop();
+                StringBuilder previous = strings.pop();
+
+                while(repeat-- > 0){
+                    previous.append(current);
+                }
+                current = previous;
+            }else{
+                current.append(c);
             }
         }
-        return res.toString();
+        return current.toString();
     }
+
 
 }
