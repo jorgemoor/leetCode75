@@ -1,4 +1,4 @@
-import stack.*;
+import queue.*;
 
 import java.util.Arrays;
 
@@ -12,10 +12,10 @@ public class main {
         int[] y = {2,4,6};
         int[][] grid = {{3,1,2,2}, {1,4,4,5}, {2,4,2,2}, {2,4,2,2}};
         int extraCandies = 1;
-        String word1 = "abc3[cd]xyz", word2 = "abbccc";
+        String word1 = "RDD", word2 = "abbccc";
 
         long inicio = System.currentTimeMillis();
-        System.out.println(DecodeString.decodeString(word1));
+        System.out.println(Dota2Senate.predictPartyVictory(word1));
         long fin = System.currentTimeMillis();
         System.out.println("Tiempo de Ejecucicon: " + (fin - inicio) + "ms");
 
